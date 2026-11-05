@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 300px;
+}
+
+.categoria{
+    padding-top:300px;
+display:flex;
+align-items:center;
+justify-content: space-between; /* distribui os espaços igualmente */
+
+}
+.menu-principal ul{
+  list-style: none; /* remove os marcadores da lista */
+}
+.menu-principal ul li{
+    display: inline-block; /* exibe os itens da lista em linha ( colocar todos os li na mesma linha)*/
+}
+.menu-principal ul li a{
+    color:rgb(255, 255, 255); /* cor do texto do menu */
+    text-decoration: none; /* remove o sublinhado do link */
+    text-transform: uppercase; /* transforma o texto em maiúsculo */
+    padding: 5px 20px; /* adiciona espaçamento interno ao link */
+    border: 1px solid transparent; /* adiciona uma borda transparente para manter o tamanho do elemento */
+    font-size: 25px;
+}
+.menu-principal ul li a:hover{ /* transição quando para o mouse sobre o texto*/
+    background-color:rgb(255, 254, 254);
+    color:rgb(10, 10, 10);
+    transition: 0.06s ease; /* faz uma pausa na transição */
+}
+#pagina-home{
+    height: 613px;
+    background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(3, 3, 3, 0.534)),url(../img/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}

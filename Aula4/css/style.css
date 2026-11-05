@@ -1,0 +1,26 @@
+body{
+background-color:black;
+
+    
+}
+
+#imagens{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%
+
+}
+.imagem1{
+    background-color:red
+
+}
+.imagem2{
+    background-color:rgb(8, 5, 48)
+}
+imagem3{
+    background-color:brown;
+}
+
+
+
