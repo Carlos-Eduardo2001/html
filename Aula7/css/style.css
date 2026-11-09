@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .logo{
-    width: 300px;
+    width: 350px;
+    align-items: left;
 }
 
 .categoria{
-    padding-top:300px;
+padding-top:300px;
 display:flex;
 align-items:center;
 justify-content: space-between; /* distribui os espaços igualmente */
-
+box-sizing: border-box; /* Garante que o padding não estoure a largura da tela */
+width: 100%;
 }
 .menu-principal ul{
   list-style: none; /* remove os marcadores da lista */
+
 }
 .menu-principal ul li{
     display: inline-block; /* exibe os itens da lista em linha ( colocar todos os li na mesma linha)*/
+    
 }
 .menu-principal ul li a{
     color:rgb(255, 255, 255); /* cor do texto do menu */
@@ -38,3 +46,82 @@ justify-content: space-between; /* distribui os espaços igualmente */
     background-size: cover;
     background-position: center;
 }
+.popular{
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    color:snow;
+    background-color: brown;
+}
+.popular-img {
+    background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 40px;
+}
+
+/* Estilo padrão da imagem */
+.popular-img img {
+  width: 250px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  /* Cria uma animação suave para o efeito de hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito acionado ao passar o mouse sobre o link/imagem */
+.popular-img a:hover img {
+  transform: scale(1.05); /* Aumenta a imagem em 5% */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adiciona sombra destacada */
+  cursor: pointer; /* Garante o ponteiro em formato de mãozinha */
+}
+.favo{
+ padding: 0;
+    text-align: center;
+    font-size: 25px;
+    color:snow;
+    background-color: brown;
+}
+.personagens{
+    padding-top: 30px   ;
+       background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+
+}
+.personagens img {width: 250px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+  /* Cria uma animação suave para o efeito de hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.personagens a:hover img{
+    transform: scale(1.05); /* Aumenta a imagem em 5% */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Adiciona sombra destacada */
+  cursor: pointer; /* Garante o ponteiro em formato de mãozinha */
+}
+.kimetsu{
+    font-size: 35px;
+    text-align: center;
+    background-color: brown;
+    color:snow;
+}
+
+.pagi-kime img{
+    padding: 20px;
+    width: 600px;
+    height: 450px;
+
+}
+.sinopse1{
+    font-size: 20px;
+    padding: 0;
+    text-align: center;
+}
+
